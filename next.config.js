@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -8,17 +10,10 @@ const nextConfig = {
       },
     ],
   },
-  experimental: {
-    serverActions: true,
-  },
-};
-
-const isProd = process.env.NODE_ENV === 'production';
-
-module.exports = {
-  output: 'export', // penting untuk export static
-  basePath: isProd ? '/nama-repo-kamu' : '',
-  assetPrefix: isProd ? '/nama-repo-kamu/' : '',
+  // REMOVE serverActions karena tidak kompatibel dengan static export
+  output: 'export', // penting untuk GitHub Pages
+  basePath: isProd ? '/rvpinoz.github.io' : '',
+  assetPrefix: isProd ? '/rvpinoz.github.io/' : '',
 };
 
 module.exports = nextConfig;
