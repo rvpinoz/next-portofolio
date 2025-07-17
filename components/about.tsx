@@ -19,30 +19,16 @@ export default function About() {
     >
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
-        After graduating with a degree in{" "}
-        <span className="font-medium">Accounting</span>, I decided to pursue my
-        passion for programming. I enrolled in a coding bootcamp and learned{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, and MongoDB
-        </span>
-        . I am also familiar with TypeScript and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a software
-        developer.
+        Hi! I'm Dimas Erlangga Putera, a <span className="font-medium">Software Engineer</span> with over 10 years of experience building digital solutions across various industries.
+        My journey in tech started with <span className="italic">curiosity</span>, and it turned into a passion for solving real-world problems through <span className="italic">clean, scalable,</span> and <span className="italic">efficient code</span>. I’ve worked on everything from internal enterprise systems to public-facing web apps, collaborating with cross-functional teams, mentoring junior devs, and constantly learning along the way.
+        I specialize in <span className="font-medium">Web & API development (Go, Node.js, Express, Next.js).</span>
       </p>
 
       <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+        Outside of code, I love sharing useful knowledge through short-form content—sometimes tech tips, sometimes fun facts, and even bits about health and everyday life.
+        Let’s connect whether it's for collaboration, building great products, or just a good conversation over coffee (virtual or not ☕).
+        {/* <span className="italic">...</span>
+        <span className="font-medium">...</span> */}
       </p>
     </motion.section>
   );
