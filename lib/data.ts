@@ -35,28 +35,57 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "IT Application Solution Supervisor",
+    location: "PT Kinarya Utama Teknik (Kiselgroup), Jakarta",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    icon: React.createElement(LuGraduationCap),
-    date: "2019",
-  },
-  {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
-    description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+      "Develop, supervise and manage applications (Web Services, Mobile App & REST API). "+
+      "Create schedules and make sure projects are completed on time. " +
+      "Conduct application testing and debugging before deployment. " +
+      "Perform application maintenance and ensure optimal performance. " +
+      "Handle troubleshooting in case of technical issues. " +
+      "Communicate with the management team, end users, and other IT teams. ",
     icon: React.createElement(FaReact),
-    date: "2021 - present",
+    date: "2023 - present",
+  },
+  {
+    title: "IT Business Architect & Design Supervisor",
+    location: "PT Kinarya Utama Teknik (Kiselgroup), Jakarta",
+    description:
+      "Design database structures for application development needs. "+
+      "Evaluate existing IT systems and provide improvement recommendations. " +
+      "Define IT architecture standards to be followed in system development. " +
+      "Oversee the creation of UI/UX for mobile and web applications.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2022 - 2023",
+  },
+  {
+    title: "IT Business Services Officer",
+    location: "Kiselgroup (Holding), Jakarta",
+    description:
+      "Analyze user requirements for application development. "+
+      "Develop API endpoints based on business and application needs. " +
+      "Ensure APIs can communicate with external services or third-party APIs. " +
+      "Perform unit testing and integration testing using Postman. " +
+      "Handle troubleshooting and fix bugs if any issues are found.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2019 - 2022",
+  },
+  {
+    title: "IT Application Development Staff",
+    location: "Kiselgroup (Holding), Jakarta",
+    description:
+      "Developing web base application. "+
+      "Create automation for data retrieval to support application needs. " +
+      "Perform application maintenance & testing.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2017 - 2019",
+  },
+  {
+    title: "Bachelor’s Degree in Informatics Engineering",
+    location: "Universitas Gunadarma, Depok",
+    description: "",
+    icon: React.createElement(LuGraduationCap),
+    date: "2009 - 2013",
   },
 ] as const;
 
@@ -85,23 +114,19 @@ export const projectsData = [
 ] as const;
 
 export const skillsData = [
+  "Go",
+  "Node.js",
+  "Java Springboot",
   "HTML",
   "CSS",
-  "JavaScript",
-  "TypeScript",
   "React",
   "Next.js",
-  "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
-  "PostgreSQL",
+  "Git",
   "Python",
-  "Django",
-  "Framer Motion",
+  "Bash Script",
+  "MySQL",
+  "PostgreSQL",
+  "Elastic Search",
+  "Kafka",
 ] as const;

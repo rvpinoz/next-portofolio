@@ -25,8 +25,9 @@ export default function About() {
       </p>
 
       <p>
-        Outside of code, I love sharing useful knowledge through short-form content—sometimes tech tips, sometimes fun facts, and even bits about health and everyday life.
-        Let’s connect whether it's for collaboration, building great products, or just a good conversation over coffee (virtual or not ☕).
+        Outside of code, I love sharing useful knowledge through short-form content 
+        <br></br>sometimes <span className="italic">tech tips</span>, sometimes <span className="italic">fun facts</span>, and even bits about <span className="italic">health and everyday life</span>.
+        <br></br>Let’s connect whether it's for collaboration, building great products, or just a good conversation over coffee (virtual or not ☕).
         {/* <span className="italic">...</span>
         <span className="font-medium">...</span> */}
       </p>
