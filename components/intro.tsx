@@ -9,10 +9,22 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { useTypewriter, Cursor } from "react-simple-typewriter";
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+  const [text] = useTypewriter({
+    words: [
+      "clean code",
+      "collaborative work",
+      "problem solving"
+    ],
+    loop: true,
+    typeSpeed: 80,
+    deleteSpeed: 50,
+    delaySpeed: 2000,
+  });
 
   return (
     <section
@@ -62,11 +74,13 @@ export default function Intro() {
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
       >
-        <span className="font-bold">Hello, I'm Dimas Erlangga Putera,</span> 
-        <br></br>a <span className="font-bold">Software Engineer</span> with{" "}
-        <span className="font-bold">10+ </span>years of experience in 
-        <span className="font-bold"> software development</span>.
-        {/* <span className="underline">React (Next.js)</span>. */}
+        Hi, I’m <span className="font-bold">Dimas Erlangga Putera</span>. <br></br>
+        a Software Engineer with a passion for <br></br>
+        <span className="text-4xl sm:text-5xl font-extrabold text-amber-500 capitalize">
+          {text}
+        </span>
+        <Cursor cursorStyle="|" />
+
       </motion.h1>
 
       <motion.div
@@ -100,7 +114,7 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com"
+          href="https://linkedin.com/in/dimaseputera"
           target="_blank"
         >
           <BsLinkedin />
@@ -108,7 +122,7 @@ export default function Intro() {
 
         <a
           className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com"
+          href="https://github.com/rvpinoz"
           target="_blank"
         >
           <FaGithubSquare />

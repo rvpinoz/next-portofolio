@@ -91,24 +91,52 @@ export const experiencesData = [
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "Rakit Ecosystem",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "The Rakit ecosystem includes apps like Coopin (cooperative), Trast (transportation), Kru (HR), and a payment gateway for seamless digital transactions. ",
+    tags: ["Go", "Express.js", "MySQL", "Flutter"],
     imageUrl: corpcommentImg,
   },
   {
-    title: "rmtDev",
+    title: "Apihub",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Switching system for transaction PPOB.",
+    tags: ["Java", "Elastic", "Kafka", "Express.js", "MySQL", "Kibana", "Python"],
     imageUrl: rmtdevImg,
   },
   {
-    title: "Word Analytics",
+    title: "Marissa & Kamila",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "A human resource management platform designed to help companies manage various aspects of employee administration.",
+    tags: ["Go", "Express.js", "Laravel", "Flutter", "MySQL"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "MyKisel",
+    description:
+      "Kisel membership application that can be monitored by each user including information related to membership and various services provided.",
+    tags: ["Go", "Laravel", "Flutter", "MySQL"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Bayaraja",
+    description:
+      "Application for reporting & transaction voucher telkomsel and PPOB.",
+    tags: ["Go", "Express.js", "Flutter", "MySQL"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Integration Wallet & Payment Gateway",
+    description:
+      "LinkAja, Bayarind, Ovo, Virtual Account.",
+    tags: ["Go", "Node.js", "MySQL"],
+    imageUrl: wordanalyticsImg,
+  },
+  {
+    title: "Barakah",
+    description:
+      "A community application designed to support the needs of every Muslim community, reducing the need for multiple apps while fulfilling all worship and other activity requirements.",
+    tags: ["Go", "Express.js", "Flutter", "MySQL"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;
@@ -122,6 +150,7 @@ export const skillsData = [
   "React",
   "Next.js",
   "Express",
+  "Tailwind",
   "Git",
   "Python",
   "Bash Script",
