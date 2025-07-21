@@ -2,9 +2,13 @@ import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import rakitImg from "@/public/rakit.png";
+import apihubImg from "@/public/apihub.png";
+import marissaImg from "@/public/marissa.png";
+import mykiselImg from "@/public/mykisel.png";
+import bayarajaImg from "@/public/bayaraja.png";
+import integrationImg from "@/public/integration.png";
+import barakahImg from "@/public/barakah.png";
 
 export const links = [
   {
@@ -81,6 +85,15 @@ export const experiencesData = [
     date: "2017 - 2019",
   },
   {
+    title: "IT Support | Web Programmer",
+    location: "Telkomsel (Outsource), Jakarta",
+    description:
+      "Get data profiling. "+
+      "Developing web base application.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2014 - 2017",
+  },
+  {
     title: "Bachelor’s Degree in Informatics Engineering",
     location: "Universitas Gunadarma, Depok",
     description: "",
@@ -95,49 +108,49 @@ export const projectsData = [
     description:
       "The Rakit ecosystem includes apps like Coopin (cooperative), Trast (transportation), Kru (HR), and a payment gateway for seamless digital transactions. ",
     tags: ["Go", "Express.js", "MySQL", "Flutter"],
-    imageUrl: corpcommentImg,
+    imageUrl: rakitImg,
   },
   {
     title: "Apihub",
     description:
       "Switching system for transaction PPOB.",
     tags: ["Java", "Elastic", "Kafka", "Express.js", "MySQL", "Kibana", "Python"],
-    imageUrl: rmtdevImg,
+    imageUrl: apihubImg,
   },
   {
     title: "Marissa & Kamila",
     description:
       "A human resource management platform designed to help companies manage various aspects of employee administration.",
     tags: ["Go", "Express.js", "Laravel", "Flutter", "MySQL"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: marissaImg,
   },
   {
     title: "MyKisel",
     description:
       "Kisel membership application that can be monitored by each user including information related to membership and various services provided.",
     tags: ["Go", "Laravel", "Flutter", "MySQL"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: mykiselImg,
   },
   {
     title: "Bayaraja",
     description:
       "Application for reporting & transaction voucher telkomsel and PPOB.",
     tags: ["Go", "Express.js", "Flutter", "MySQL"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: bayarajaImg,
   },
   {
     title: "Integration Wallet & Payment Gateway",
     description:
       "LinkAja, Bayarind, Ovo, Virtual Account.",
     tags: ["Go", "Node.js", "MySQL"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: integrationImg,
   },
   {
     title: "Barakah",
     description:
       "A community application designed to support the needs of every Muslim community, reducing the need for multiple apps while fulfilling all worship and other activity requirements.",
     tags: ["Go", "Express.js", "Flutter", "MySQL"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: barakahImg,
   },
 ] as const;
 

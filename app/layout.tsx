@@ -11,7 +11,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Dimas Erlangga Putera | Personal Portfolio",
-  description: "Dimas Erlangga Putera is a full-stack developer with 10 years of experience.",
+  description: "Dimas Erlangga Putera is a Software Engineer.",
 };
 
 export default function RootLayout({

@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import {
   VerticalTimeline,
@@ -14,6 +14,10 @@ import { useTheme } from "@/context/theme-context";
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
   const { theme } = useTheme();
+  const [visibleDescriptionIndex, setVisibleDescriptionIndex] = useState<number | null>(null);
+  const toggleDescription = (index: number) => {
+    setVisibleDescriptionIndex(visibleDescriptionIndex === index ? null : index);
+  };  
 
   return (
     <section id="experience" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
@@ -44,11 +48,21 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
+              <h3 className="min-w-[150px] font-semibold capitalize">{item.title}</h3>
               <p className="font-normal !mt-0">{item.location}</p>
-              <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
+              <p className={`!mt-1 !font-normal text-gray-700 dark:text-white/75 transition-all ${
+                  visibleDescriptionIndex === index ? "visible h-auto opacity-100 text-justify" : "invisible h-0 opacity-0"
+                }`}
+              >
                 {item.description}
               </p>
+
+              <button
+                onClick={() => toggleDescription(index)}
+                className="mt-2 text-sm text-blue-500 hover:underline"
+              >
+                {visibleDescriptionIndex === index ? "Hide Description" : "Show Description"}
+              </button>
             </VerticalTimelineElement>
           </React.Fragment>
         ))}
