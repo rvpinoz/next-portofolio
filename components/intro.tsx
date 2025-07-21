@@ -18,7 +18,8 @@ export default function Intro() {
     words: [
       "clean code",
       "collaborative work",
-      "problem solving"
+      "problem solving",
+      "analytical thinking"
     ],
     loop: true,
     typeSpeed: 80,
