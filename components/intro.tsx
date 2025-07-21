@@ -43,7 +43,7 @@ export default function Intro() {
             }}
           >
             <Image
-              src="/rupinoz.jpg"
+              src="/profile4.jpg"
               alt="Rvpinoz portrait"
               width="192"
               height="192"
